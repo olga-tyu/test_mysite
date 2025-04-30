@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-курсовичок</title>
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    
+    <link rel="stylesheet" href="css/captcha.css">
+    <link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+        crossorigin="anonymous">
+    <script src="js/captcha.js"></script>
+</head> 
+<!-- https://www.geeksforgeeks.org/captcha-generator-using-html-css-and-javscript/ -->
+<body onload="generate()">
+    <!-- <main>
+        <h2>Олимпиадная задача:</h2>
+        <div class="box1">
+            Коля переставляет карточки с цифрами 9, 4, 1, 8, 0 относительно друг друга и записывает получающиеся четырехзначные числа. Какое наименьшее количество чесел из полученных может выбрать Коля, чтобы среди них гарантированно оказалось хотя бы одно нечетное?Ответ пояснить.
+        </div>
+         <div class="box1">
+            Чтобы открыть решение - отправьте код подтверждения<quos class="100"></quos>
+        </div> -->
+    
+    <section style="max-height: 100%; margin:auto;">
+      
+        <h2>Олимпиадная задача:</h2>
+        <div class="box1">
+            Коля переставляет карточки с цифрами 9, 4, 1, 8, 0 относительно друг друга и записывает получающиеся четырехзначные числа. Какое наименьшее количество чесел из полученных может выбрать Коля, чтобы среди них гарантированно оказалось хотя бы одно нечетное?Ответ пояснить.
+        </div>
+         <div class="box1">
+            Чтобы открыть решение - отправьте код подтверждения "Captcha code"
+        </div>
+       
+       
+    <div id="user-input" class="inline">
+        <input type="text" 
+               id="submit" 
+               placeholder="Captcha code" />
+    </div>
+
+    <div class="inline" onclick="generate()">
+        <i class="fas fa-sync"></i>
+    </div>
+
+    <div id="image" 
+         class="inline" 
+         selectable="False">
+    </div>
+    <input type="submit" 
+           id="btn" 
+           onclick="printmsg()"
+           value=" SEND " />
+
+    <p id="key"></p>
+     <div class="box1">Решение: Кол-во комбинаций из пяти чисел равно 5!=1*2*3*4*5=24*5=120. То есть
+120 разных четырехзначных комбинаций можно составить из пяти чисел. 
+Для выполнения условия нечетности получившегося числа необходимо, чтобы на последнем месте стояла либо 9 либо 1, итого два числа из пяти (согласно предложенного набора).
+120*2/5=48, столько существует нечетных вариантов из 120. Значит чтобы гарантированно оказалось хотя бы одно четное, необходимо взять все четные и одно нечетное: (120-48)+1=73
+             <quos class="100"></quos>
+    </div>
+  
+</section>  
+                 
+   
+  <p>
+       <div class="btns_next"> 
+            <a href="index.html">На главную</a>           
+        </div> 
+                
+   </p> 
+    <br></br> 
+    </main>   
+  
+</body>
+<footer></footer>
+</html>
