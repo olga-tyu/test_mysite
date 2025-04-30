@@ -1,0 +1,127 @@
+/* html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+     box-sizing: inherit;
+  } */
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Triodion&display=swap');
+  *{
+      margin:10px;
+      padding:0px;   
+      border-radius:3%;
+      font-family: "Lobster", serif;
+      background-color: #c8f2f5;
+      color: #156e75;
+      font-style: normal;        
+      text-align: center;
+
+    .submenu{
+      display: none;   
+      flex-direction: column;
+      position: absolute;    
+      }
+
+    ul {
+    display: flex;
+    list-style: none;    
+   }
+
+    li {
+    position: relative;
+    text-align: left;
+    font-size: 24px;
+   }  
+ 
+   li:hover >.submenu{
+    display: flex;
+    }
+
+  }
+  .submenu{
+   display: none;   
+   flex-direction: column;
+   position: absolute;    
+  }
+
+   a{
+    white-space: nowrap;
+    /* padding: 1em; */
+   }
+  li:hover >a,
+   a:hover{
+      color: #ff0000; 
+   }
+
+  .container{
+     width: 100%;     
+     margin: 0 auto;
+   }
+   .container h1{
+      font-size: calc(24px + 16 * (100vw / 1280));      
+    }
+   
+   .gallery{
+     display: grid;  
+     grid-template-columns: repeat(6, 1fr);
+     gap: 10px;
+     justify-content: center;   
+     grid-template-areas: 
+     "area0 area1 area2 area3 area4 area7"
+     "area0 area5 area5 area6 area6 area7";
+   }
+   
+    .gallery img {
+      object-fit: scale-down;
+      max-width: 100%;
+      flex: 1;
+      min-height: 0;
+      /* max-height: 80%; */
+  }
+  
+   .item1{
+        grid-area: area1;      
+     }  
+   .item2{
+        grid-area: area2;
+     }
+   .item3{
+        grid-area: area3;
+     }
+   .item4{
+        grid-area: area4;
+     }
+   .item5{
+        grid-area: area5;
+        /* width: 141px;
+        height: 72px; */
+     }
+   .item6{
+        grid-area: area6;
+        display: flex;
+  }
+
+  h2{
+    margin: 15px;
+    font-size: 35px;
+    color: #156e75;
+
+  }
+   div a {
+    font-size: 24px;    
+   }
+
+ /* отвечает за подсветку при нажатии tab-с клавиатуры */
+   a:focus{ 
+    outline: none;
+    font-weight: bold;
+   }   
+ .box1{
+display: flex;
+text-align: center;
+width: 50%;
+margin: auto;
+padding: 30px;
+font-size: 24px;
+
+ }
+

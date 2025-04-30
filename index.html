@@ -4,23 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт-курсовичок</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/snow.min.css">
+    <link rel="stylesheet" href="css/captcha.css">
+    <link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+        crossorigin="anonymous">
+    <script src="js/captcha.js"></script>
 </head>
-<body>
-    <div class="main"> 
-        <div class="content">
-            <h1>Свидетели Игошина - Мамай (01 февраля 2025)</h1>       
-            <img src="mountains.png">
+    
 
 
-    <div class="submain">
-        <div class="content">       
-            <img src="hats.png"><img src="snowman.png"><img src="sun.png">
-            <p>покоряют Мамай исключительно пешком!</p>                   
-          
-    <div class="main">
-        <p>
-        <a href="index2.html">На следующую страницу</a> 
-                <!-- <img src="hats.png"><img src="snowman.png"><img src="sun.png"> -->   
+<body onload="generate()">
+<nav>
+    <ul class="menu">
+        <li><a href="">Меню</a>
+            <ul class="submenu">
+                <li><a href="index1.html">Обо мне</a></li>
+                <li><a href="index5.html">Сертификаты</a></li>
+                <li><a href="index3.html">Задачка</a></li>    
+                <li><a href="index4.html">Антистресс</a></li>  
+            </ul>                 
+        </li>    
+    </ul>
+
+</nav>
+<div class="container">
+        <h1>Свидетели Игошина покоряют Мамай! (01 февраля 2025)</h1>
+        
+        <section class="gallery">
+            <div class="item item0"></div>
+            <div class="item item1"><img src="image/hats.jpg" alt=""></div>
+            <div class="item item2"><img src="image/sun.jpg" alt=""></div>
+            <div class="item item3"><img src="image/snowman.jpg" alt=""></div>
+            <div class="item item4"><img src="image/way.jpg" alt=""></div>
+            <div class="item item5"><img src="image/mountains.jpg" alt=""></div>
+            <div class="item item6"><img src="image/breakfast.jpg" alt=""></div>
+            <div class="item item7"></div>
+           
+        </section>
+  </div>  
+
+    <div id="user-input" class="inline">
+        <input type="text" 
+               id="submit" 
+               placeholder="Captcha code" />
+    </div>
+
+    <div class="inline" onclick="generate()">
+        <i class="fas fa-sync"></i>
+    </div>
+
+    <div id="image" 
+         class="inline" 
+         selectable="False">
+    </div>
+    <input type="submit" 
+           id="btn" 
+           onclick="printmsg()"
+           value=" SEND " />
+
+    <p id="key"></p>
+
+
+<script src="js/Snow.js"></script>
+    <script> new Snow (); </script>
+    
+                  
+   
+  <p>
+       <div class="btns_next"> 
+            <a href="index1.html">Далее</a>           
+        </div> 
+                
+   </p> 
+    <br></br> 
+       
+  
 </body>
+<footer></footer>
 </html>
