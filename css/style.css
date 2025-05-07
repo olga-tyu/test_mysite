@@ -16,6 +16,7 @@
       text-align: center;
 
     .submenu{
+      margin:2px;
       display: none;   
       flex-direction: column;
       position: absolute;    
@@ -114,6 +115,7 @@
    a:focus{ 
     outline: none;
     font-weight: bold;
+    position: relative;
    }   
  .box1{
 display: flex;
